@@ -50,16 +50,16 @@
         const counter = 0;
         for(let i = 0; i < body.data.length; i++){
             const title = body.data[i].title
+            let ol = document.createElement('ol')
             let newElement = document.createElement('li')
             newElement.innerHTML = title
-            getBody.appendChild(newElement)
+            ol.appendChild(newElement)
+            getBody.appendChild(ol)
             console.log(title)
-            for(let j = 0; j < newElement.length; j++ ){
-                if(newElement[j] === "true")
-                    counter++;
-            }
-            console.log(counter)
         }
+        let totalSumOfAlbum = body.data.length
+        console.log(totalSumOfAlbum)
+        getBody.appendChild(totalSumOfAlbum)
         console.log(body);
         
         
@@ -93,6 +93,9 @@ const loadUser1 = () =>{  fetch("https://deezerdevs-deezer.p.rapidapi.com/search
             getBody.appendChild(newElement)
             console.log(title)
         }
+        let totalSumOfAlbum = body1.data.length
+        console.log(totalSumOfAlbum)
+        getBody.appendChild(totalSumOfAlbum)
         console.log(body1);
         
         
@@ -126,6 +129,9 @@ const loadUser2 = () =>{  fetch("https://deezerdevs-deezer.p.rapidapi.com/search
             getBody.appendChild(newElement)
             console.log(title)
         }
+        let totalSumOfAlbum = body2.data.length
+        console.log(totalSumOfAlbum)
+        getBody.appendChild(totalSumOfAlbum)
         console.log(body2);
         
         
