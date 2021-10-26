@@ -18,9 +18,9 @@
   <body>
       <div class="text-center my-5">
 
-          <button type="button" class="btn btn-success" onclick="loadUser()">Eminem Album</button>
-          <button type="button" class="btn btn-success" onclick="loadUser1()">Metallica album</button>
-          <button type="button" class="btn btn-success" onclick="loadUser2()">Behemoth album</button>
+          <button type="button" class="btn btn-success" onclick="loadUser()">Eminem</button>
+          <button type="button" class="btn btn-success" onclick="loadUser1()">Drake </button>
+          <button type="button" class="btn btn-success" onclick="loadUser2()">NF </button>
         </div>
    
 
@@ -72,7 +72,7 @@
 }
 
 
-const loadUser1 = () =>{  fetch("https://deezerdevs-deezer.p.rapidapi.com/search?q=metallica", {
+const loadUser1 = () =>{  fetch("https://deezerdevs-deezer.p.rapidapi.com/search?q=drake", {
         "method": "GET",
         "headers": {
             "x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com",
@@ -108,7 +108,7 @@ const loadUser1 = () =>{  fetch("https://deezerdevs-deezer.p.rapidapi.com/search
 
 
 
-const loadUser2 = () =>{  fetch("https://deezerdevs-deezer.p.rapidapi.com/search?q=behemoth", {
+const loadUser2 = () =>{  fetch("https://deezerdevs-deezer.p.rapidapi.com/search?q=nf", {
         "method": "GET",
         "headers": {
             "x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com",
