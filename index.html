@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-   
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -24,7 +24,7 @@
           <button type="button" class="btn btn-success" onclick="loadUser1()">Drake </button>
           <button type="button" class="btn btn-success" onclick="loadUser2()">NF </button>
         </div>
-   
+
 
 
 
@@ -63,14 +63,14 @@
         console.log(totalSumOfAlbum)
         getBody.appendChild(totalSumOfAlbum)
         console.log(body);
-        
-        
+
+
     })
-    
+
     .catch(err => {
         console.error(err);
     });
-    
+
 }
 
 
@@ -85,7 +85,7 @@ const loadUser1 = () =>{  fetch("https://deezerdevs-deezer.p.rapidapi.com/search
     .then(response => {
         return response.json();
     })
-   
+
     .then(body1 => {
         const getBody = document.querySelector('body');
         for(let i = 0; i < body1.data.length; i++){
@@ -99,13 +99,13 @@ const loadUser1 = () =>{  fetch("https://deezerdevs-deezer.p.rapidapi.com/search
         console.log(totalSumOfAlbum)
         getBody.appendChild(totalSumOfAlbum)
         console.log(body1);
-        
-        
+
+
     })
     .catch(err => {
         console.error(err);
     });
-    
+
 }
 
 
@@ -121,7 +121,7 @@ const loadUser2 = () =>{  fetch("https://deezerdevs-deezer.p.rapidapi.com/search
     .then(response => {
         return response.json();
     })
-   
+
     .then(body2 => {
         const getBody = document.querySelector('body');
         for(let i = 0; i < body2.data.length; i++){
@@ -135,13 +135,13 @@ const loadUser2 = () =>{  fetch("https://deezerdevs-deezer.p.rapidapi.com/search
         console.log(totalSumOfAlbum)
         getBody.appendChild(totalSumOfAlbum)
         console.log(body2);
-        
-        
+
+
     })
     .catch(err => {
         console.error(err);
     });
-    
+
 }
 
     </script>
@@ -162,6 +162,6 @@ const loadUser2 = () =>{  fetch("https://deezerdevs-deezer.p.rapidapi.com/search
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
-   
+
   </body>
 </html>
